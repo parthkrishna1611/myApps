@@ -45,3 +45,8 @@ sudo apt-get install -y mplayer
 
 # list all installed apps
 # ls /usr/share/applications | awk -F '.desktop' ' { print $1}' - > ~/Desktop/applications.txt
+
+echo "###############################"
+echo "All done"
+echo "###############################"
+sleep 5
