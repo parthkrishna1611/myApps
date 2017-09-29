@@ -35,39 +35,88 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | tee /etc/apt/sources.
 # sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 
 apt-get update
+sleep 3
+clear
+
+# Fortune and Cowsay
+sudo apt-get install fortune cowsay
+clear
+fortune | cowsay -f tux
+sleep 5
+clear
 
 # VLC Media Player
 sudo apt-get install -y vlc
+clear
+cowsay "VLC installed"
+sleep 3
+clear
 
 # CHROMIUM BROWSER
 sudo apt-get install -y chromium-browser
+clear
+cowsay "Chromium installed"
+cowsay -f apt "Chromium Install"
+sleep 3
+clear
 
 # SUPUERTUX GAME
 sudo apt-get install -y supertux
+clear
+cowsay -f beavis.zen "Supertux installed"
+sleep 3
 
 # Pip
 sudo apt-get install -y python-pip
+clear
+cowsay -f bong "pip installed"
+sleep 3
 
 # git
 sudo apt-get install -y git
+clear
+cowsay -f bud-frogs "git installed"
+sleep 3
 
 # Sublime Text 3
 apt-get install -y sublime-text
+clear
+cowsay -f bunny "Sublime Text 3 installed"
+sleep 3
 
 # GParted - partition manager
 apt-get install -y gparted
+clear
+cowsay -f calvin "GParted installed"
+sleep 3
 
 # Upgrade pip
 pip install --upgrade pip
+clear
+cowsay -f cheese "pip upgraded"
+sleep 3
+
+# install setup tools
 pip install setuptools
+clear
+cowsay -f cock "setup tools installed"
+sleep 3
 
 # Virtual environment - to create isolated python environments
 pip install virtualenv virtualenvwrapper
+clear
+cowsay -f cower "Virtual environment installed"
+sleep 3
+
+# adb and fastboot - debug bridge for your android device
+apt-get install -y android-tools-adb android-tools-fastboot
+clear
+cowsay -f dragon "adb installed"
+sleep 3
 
 # Visual Studio Code
 # sudo apt-get install code
 
-echo "###############################"
-echo "All done"
-echo "###############################"
-sleep 5
+clear
+xcowsay "All packages installed"
+exit
