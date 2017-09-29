@@ -39,9 +39,13 @@ sleep 3
 clear
 
 # Fortune and Cowsay
-sudo apt-get install fortune cowsay
+sudo apt-get install -y fortune fortune-mod cowsay
 clear
-fortune | cowsay -f tux
+PATH="$PATH:/usr/games"
+export PATH
+echo $PATH >> ~/.bashrc
+echo $PATH >> ~/.bash_profile
+fortune|cowsay -f tux
 sleep 5
 clear
 
