@@ -46,7 +46,7 @@ export PATH
 echo $PATH >> ~/.bashrc
 echo $PATH >> ~/.bash_profile
 fortune|cowsay -f tux
-sleep 5
+sleep 8
 clear
 
 # VLC Media Player
@@ -59,7 +59,6 @@ clear
 # CHROMIUM BROWSER
 sudo apt-get install -y chromium-browser
 clear
-cowsay "Chromium installed"
 cowsay -f apt "Chromium Install"
 sleep 3
 clear
@@ -120,6 +119,17 @@ sleep 3
 
 # Visual Studio Code
 # sudo apt-get install code
+
+
+cd /home/$USER/
+
+# ~/.bash_profile
+chmod 777 .bashrc
+head -n -1 .bashrc > rc_temp.txt ; mv rc_temp.txt .bashrc
+
+# ~/.bash_profile
+chmod 777 .bash_profile
+head -n -1 .bash_profile > pro_temp.txt ; mv pro_temp.txt .bash_profile
 
 clear
 xcowsay "All packages installed"
