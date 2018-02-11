@@ -125,11 +125,11 @@ cd /home/$USER/
 
 # ~/.bash_profile
 chmod 777 .bashrc
-head -n -1 .bashrc > rc_temp.txt ; mv rc_temp.txt .bashrc
+head -n -1 .bashrc > rc_temp.txt ; rm .bashrc ; mv rc_temp.txt .bashrc
 
 # ~/.bash_profile
 chmod 777 .bash_profile
-head -n -1 .bash_profile > pro_temp.txt ; mv pro_temp.txt .bash_profile
+head -n -1 .bash_profile > pro_temp.txt ; rm .bash_profile ; mv pro_temp.txt .bash_profile
 
 clear
 xcowsay "All packages installed"
